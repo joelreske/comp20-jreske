@@ -1,0 +1,21 @@
+.homer {
+    height: 312px;
+    width: 312px;
+    background:url(homer.jpg) 0 0px;
+}
+
+@media (max-width: 1200px) {
+    .homer{
+        background:url(homer.jpg) 100% 0%;
+    }
+}
+@media (max-width: 800px) {
+    .homer{
+        background:url(homer.jpg) 0% 100%;
+    }
+}
+@media (max-width: 400px) {
+    .homer{
+        background:url(homer.jpg) 100% 100%;
+    }
+}
