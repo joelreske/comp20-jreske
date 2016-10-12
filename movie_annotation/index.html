@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Classic Movie</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+<h1 id="title">Classic Movie</h1>
+
+<video src="https://www.cs.tufts.edu/comp/20/classic.mp4" id="classic_video" controls></video>
+<div id="movie_quotes"></div>
+
+<script>
+    // Complete this section and create a CSS file named style.css
+
+    var quotes = [
+        [ 24, "Igor: DR. FRANKENSTEIN?!?!?"],
+        [ 31, "Dr. Frederick Frankenstein: Frokensteen."],
+        [ 34, "Igor: You're putting me on."],
+        [ 36, 'Dr. Frederick Frankenstein: No, it pronounced, "Frokensteen".'],
+        [ 39.5, 'Igor: Do you also say Froaderick?'],
+        [ 42, 'Dr. Frederick Frankenstein: No . . . "Frederick."'],
+        [ 44, "Igor: Well, why isn't it 'Froaderick Frokensteen'?"],
+        [ 47, 'Dr. Frederick Frankenstein: It isn\'t, it\'s "Frederick Frokensteen"'],
+        [ 50, 'Igor: I see.'],
+        [ 51.5, 'Dr. Frederick Frankenstein: You must be Igor. [He pronounces it ee-gor.]'],
+        [ 53, 'Igor: No, it\'s pronounced "eye-gor."'],
+        [ 57, 'Dr. Frederick Frankenstein: But they told me it was "ee-gor"...'],
+        [ 58.5, 'Igor: Well, they were wrong then, weren\'t they?'],
+        [ 61.5, 'Dr. Frederick Frankenstein: Uh, you were sent here by Herr Falkstein, weren\'t you?'],
+        [ 65, 'Igor: Yes. My grandfather used to work for your grandfather.'],
+        [ 71, 'Dr. Frederick Frankenstein: How nice.'],
+        [ 72, 'Igor: Of course the rates have gone up.'],
+        [ 74, 'Dr. Frederick Frankenstein: Of course, of course, I\'m sure we\'ll get along splendidly. Oh, I uh, you know I don\'t mean to embarrass you, but I\'m rather a brilliant surgeon. Perhaps I can help you with that hump.' ],
+        [ 89, 'Igor: What hump?'],
+        [ 95, '']
+    ]
+
+    var classic_video = document.getElementById("classic_video");
+    classic_video.addEventListener("timeupdate", changeQuote);
+
+    function changeQuote(){
+        for(var i=0; i<quotes.length; i++){
+            if (classic_video.currentTime > quotes[i][0] && classic_video.currentTime < quotes[i+1][0]){
+                document.getElementById("movie_quotes").innerHTML = quotes[i][1];
+                break;
+            }
+        }
+    }
+</script>
+</body>
+</html> 
