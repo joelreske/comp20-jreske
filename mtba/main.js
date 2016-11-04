@@ -4,7 +4,7 @@ var request = new XMLHttpRequest();
 var me = new google.maps.LatLng(myLat, myLng);
 var map;
 var my_marker;
-var redline_data_url = "https://rocky-taiga-26352.herokuapp.com/redline.json";
+var redline_data_url = "https://whispering-mountain-14036.herokuapp.com/redline.json";
 
 var myOptions = {
     zoom: 13,
