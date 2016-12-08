@@ -1,7 +1,7 @@
 Joel Reske
-September 25, 2016
+December 7, 2016
 COMP-20
-mtba
+security
 
 # Identify what aspects of the work have been correctly implemented and what have not.
 All aspects of the project have been implemented correctly. 
@@ -13,4 +13,4 @@ I did not collaborate with anyone on this assignment.
 1-2 hr
 
 # Credit
-As directed by the assignment, used function found at http://stackoverflow.com/questions/14560999/using-the-haversine-formula-in-javascript to compute haversine distance.
+As noted in the project, I used a stylesheet from https://github.com/thomaspark/pubcss to so some easy formatting. 
